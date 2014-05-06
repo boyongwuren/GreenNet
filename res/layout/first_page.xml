@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+		<LinearLayout 
+		    android:id="@+id/viewContent"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+		    
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/keyCall"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginBottom="3dp"
+		        />
+		    
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/cut_line"
+		        android:contentDescription="@string/contentDescription"
+		        />
+		    
+		    <!--  
+		    <com.green_net_baseView.GridViewOpen 
+		        android:id="@+id/keyCallGridView"
+		        android:layout_width="734px"
+		        android:layout_height="474px"
+		        android:numColumns="4"
+		        android:verticalSpacing="10dp"
+		        android:background="@android:color/darker_gray"
+		        />
+		    -->
+		    
+		    <GridView 
+		        android:id="@+id/keyCallGridView"
+		        android:layout_width="734px"
+		        android:layout_height="474px"
+		        android:numColumns="4"
+		        android:verticalSpacing="60px"
+		        android:horizontalSpacing="55px"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="20px"
+		        android:layout_marginBottom="20px"
+		        />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/oftenVisit"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginBottom="3dp"
+		        />
+		    
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/cut_line"
+		        android:contentDescription="@string/contentDescription"
+		        />
+		    
+		    <FrameLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="35px"
+		        >
+	 
+
+				    <GridView 
+				        android:id="@+id/oftenVisitGridView"
+				        android:layout_width="734px"
+				        android:layout_height="205px"
+				        android:numColumns="4"
+				        android:verticalSpacing="20dp"
+				        android:layout_gravity="center_horizontal"
+				        />
+		         
+				    
+				    <TextView 
+				        android:id="@+id/nooftenVisitTxt"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/noHasOftenVisit"
+				        android:layout_gravity="center"
+				        />
+		    
+		    </FrameLayout>
+		
+		</LinearLayout>
+		
+
+		
+
+</FrameLayout>

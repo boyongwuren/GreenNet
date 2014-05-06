@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">绿色上网</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="first_page">第一页</string>
+    <string name="middle_page">第二页</string>
+    <string name="last_page">第三页</string>
+    <string name="contentDescription">contentDescription</string>
+    <string name="infoTxt">信息栏</string>
+    <string name="keyCall">重点推荐</string>
+    <string name="oftenVisit">经常访问</string>
+    <string name="noHasOftenVisit">您还没有经常访问的页面</string>
+    <string name="noCollectSite">您还没有收藏网页</string>
+    
+    <item type="id" name="tag_first"></item>
+
+</resources>

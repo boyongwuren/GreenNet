@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/midContent"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@drawable/title_bg" >
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/addPagerBtn"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbars="none" >
+
+            <AbsoluteLayout
+                android:id="@+id/titleContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/addPagerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/add_pager_btn_bg" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loadProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/midContent"
+        android:layout_marginTop="-5dp"
+        android:max="100"
+        android:progress="70" />
+
+    <FrameLayout
+        android:id="@+id/greenNetViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnContent"
+        android:layout_below="@+id/loadProgressBar"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnContent"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/settingsBtnContent"
+            android:layout_width="match_parent"
+            android:layout_height="95px"
+            android:layout_toLeftOf="@+id/settingBtn"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/back_btn_bg" />
+
+            <ImageButton
+                android:id="@+id/next_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/next_btn_bg" />
+
+            <ImageButton
+                android:id="@+id/home_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/home_btn_bg" />
+
+            <ImageButton
+                android:id="@+id/flush_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/flush_btn_bg" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" >
+
+
+                <ImageButton
+                    android:id="@+id/manager_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/contentDescription"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/manager_btn_bg" />
+
+                <TextView
+                    android:id="@+id/titleNumTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="13dp"
+                    android:text="1" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/collect_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/collect_btn_bg" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/settingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/setting_down" />
+    </RelativeLayout>
+
+</RelativeLayout>

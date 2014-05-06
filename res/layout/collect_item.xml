@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="27dp" >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="152px"
+            android:layout_height="154px" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/web_kk_bg_pic" />
+
+            <ImageView
+                android:id="@+id/webPic"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/fail_drawable" />
+
+            <TextView
+                android:id="@+id/urlTxt"
+                android:layout_width="152px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/action_settings" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/infoTxt"
+            android:layout_width="152px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="@string/noCollectSite" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/close_btn_bg"
+        android:contentDescription="@string/contentDescription" />
+
+</RelativeLayout>
